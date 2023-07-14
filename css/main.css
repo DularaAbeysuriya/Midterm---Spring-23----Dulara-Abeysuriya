@@ -344,7 +344,7 @@ p {
   }
   
  /*Footer section */ 
- 
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
@@ -365,8 +365,8 @@ ul{
   color: white;
 }
 .footer-col{
-   width: 25%;
-   padding: 0 15px;
+   width: 20%;
+   padding: 0px;
 }
 .footer-col p{
   color: #bbbbbb;
@@ -384,7 +384,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color:#E1AA69;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -406,6 +406,10 @@ ul{
 	color: #ffffff;
 	padding-left: 8px;
 }
+.logo {
+  padding-left: 50px;
+}
+
 
 /*responsive footer*/
 
@@ -419,6 +423,47 @@ ul{
   .footer-col{
     width: 100%;
 }
+}
+
+/* Add animation to the button on hover */
+.button {
+  color: #313131;
+  padding: 10px 24px;
+  background: #f1f1f1;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: .3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  opacity: .8;
+}
+
+/* Add animation to the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: .3s;
+}
+
+.navbar.scrolled {
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for navbar scrolling effect */
+.navbar.scrolled {
+  transform: translateY(0);
+}
+
+.navbar:not(.scrolled) {
+  transform: translateY(-100%);
 }
 
 

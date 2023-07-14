@@ -1,31 +1,56 @@
-.hero {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 800px; /* Adjust the width as needed */
-    max-height: 400px;
-  }
 
-  .hero img {
-    width: 100%;
+html, body {
     height: 100%;
-    object-fit: cover;
-  }
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
 
-  .hero-content {
+.main-image {
+    position: relative;
+    background-image: url(images/mealpro-bqrz4lyA3PM-unsplash.jpg)
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-  }
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-  .hero h1 {
-    font-size: 32px;
-    margin-bottom: 16px;
-  }
+.container h1 {
+    margin: 0;
+    font-size: 66px;
+}
 
-  .hero p {
-    font-size: 16px;
-  }
+.container h1 span {
+    border: 6px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen {
+    margin: 20px;
+    display: block;
+    font-size: 22px;
+}
+
+.button {
+    color: #313131;
+    padding: 10px 24px;
+    background: #f1f1f1;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+}
+
+.button:hover {
+    opacity: .6;
+}
