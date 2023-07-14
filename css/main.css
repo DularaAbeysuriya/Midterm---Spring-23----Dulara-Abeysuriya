@@ -440,32 +440,39 @@ ul{
   opacity: .8;
 }
 
-/* Add animation to the navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 999;
-  transition: .3s;
-}
-
-.navbar.scrolled {
-  background-color: #f1f1f1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Animation for navbar scrolling effect */
-.navbar.scrolled {
-  transform: translateY(0);
-}
-
-.navbar:not(.scrolled) {
-  transform: translateY(-100%);
-}
-
+/* Animation for the hero image */
+.hero-image {
+      animation: slideIn 1s ease-in-out;
+    }
+/* Keyframes for the slideIn animation */
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    /* Animation for the button */
+.button {
+      animation: pulse 2s infinite;
+    }
+    
+/* Keyframes for the pulse animation */
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
 
 
   
