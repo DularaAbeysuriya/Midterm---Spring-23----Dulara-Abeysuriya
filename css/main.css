@@ -219,7 +219,7 @@ p {
   /*Reviews*/
 
   .customer-reviews {
-    text-align: center;
+    text-align:center;
   }
   .customer-review-Para {
     text-align: center;
@@ -253,6 +253,7 @@ p {
     text-align: left;
     margin: 10px;
   }
+  
 
 
 /*Order now*/
@@ -343,33 +344,84 @@ p {
   }
   
  /*Footer section */ 
+ 
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+  color: #bbbbbb
+}
+.footer-col .logo {
+  margin left: 100px;
+}
+.footer{
+	background-color: black;
+  padding: 70px 0;
+}
+.footer-text{
+  text-align: center;
+  color: white;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col p{
+  color: #bbbbbb;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
 
-  .footer {
-    background-color: #070503;
-    padding: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .logo {
-    margin-right: 10px;
-  }
-  
-  .footer-content {
-    color: #fff;
-    text-align: left;
-  }
-  
-  .footer p {
-    margin-bottom: 10px;
-    text-align: left;
-    width: 356px;
-  }
-  
-  .footer-text {
-    font-size: 14px;
-    text-align: center;
-  }
+/*responsive footer*/
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
   
   
