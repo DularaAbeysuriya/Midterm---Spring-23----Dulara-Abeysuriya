@@ -1,0 +1,375 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  float: right;
+  margin-top: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  display: flex;
+  padding: auto;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+#toggler,
+.navbar label {
+  display: none;
+}
+
+@media screen and (max-width:600px) {
+  .navbar {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+}
+
+h1 {
+  text-align: left;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 50pt;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: left;
+  margin-top: -10px;
+}
+
+.text-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.button {
+  background-color: #F7A848;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+
+.hero-image {
+  width: 606px;
+  height: 643px;
+  float: right;
+  shape-outside: url(images/hero-image.jpg);
+  margin-left: 20px;
+}
+
+.favorites-container {
+    height: 692px;
+    width: 1440px;
+    background-color: #F4F1EC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .item {
+    display: inline-block;
+    flex: 1 0 30%; /* Adjust the width as needed */
+    margin: 10px;
+    width: 390px;
+    height: 371px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items:center ;
+  }
+  .favorites-text {
+    flex: 1 0 100%; /* Take full width */
+    padding-left: 30px;
+
+  }
+
+  .favorites-text h2 {
+    text-align: left;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+    
+  }
+
+  .item img {
+    width: 400px;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .item h3,
+  .item p {
+    margin: 10px 0;
+    padding-right: 20px;
+  }
+
+  .story-image {
+    margin-top: 20px;
+    float: right;
+    margin-left: 20px;
+    padding-right: 70px;
+  }
+  
+  .story-content {
+    width: calc(100% - 700px);
+     /* Adjust this value according to your needs */
+     padding-right: 30px;
+    
+  }
+  .story-content h2, .story-content p {
+    padding-top: 70px;
+  }
+  
+  .story-text h2 {
+
+    text-align: left;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 30pt;
+
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .how-it-made-image {
+    margin-top: 20px;
+    flex: 1;
+    text-align: right;
+  }
+  
+  .how-it-made-image img {
+    float: right;
+  }
+  
+  .how-it-made-content {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .how-it-made-content h2 {
+    text-align: left;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 30pt;
+  }
+  .how-it-made-content p,
+  .how-it-made-content .button {
+    text-align: left;
+  }
+  
+  
+  /*Reviews*/
+
+  .customer-reviews {
+    text-align: center;
+  }
+  .customer-review-Para {
+    text-align: center;
+  }
+  
+  .section-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    font-size: 30pt;
+  }
+  
+  .testimonial-box {
+    display: inline-block;
+    width: 400px;
+    height: 380px;
+    background-color: #F7A848;
+    margin: 10px;
+  }
+  
+  .testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .testimonial p {
+    color: #fff;
+    font-weight:lighter;
+    text-align: left;
+    margin: 10px;
+  }
+
+
+/*Order now*/
+
+  .order-now-container {
+    background-color: #EDE7DF;
+    width: 1280px;
+    height: 459px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  .order-now-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .order-now-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 44pt;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  .order-now-description {
+    margin-bottom: 20px;
+  }
+  
+  .email-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .email-input {
+    padding: 10px;
+    margin-right: 0px;
+
+    border: none;
+  }
+  
+  .order-button {
+    background-color: #E1AA69;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .order-now-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .order-box-container {
+    width: 1122px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .email-input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .order-button {
+    background-color: #E1AA69;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+
+    cursor: pointer;
+  }
+  
+ /*Footer section */ 
+
+  .footer {
+    background-color: #070503;
+    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .logo {
+    margin-right: 10px;
+  }
+  
+  .footer-content {
+    color: #fff;
+    text-align: left;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+    text-align: left;
+    width: 356px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  
