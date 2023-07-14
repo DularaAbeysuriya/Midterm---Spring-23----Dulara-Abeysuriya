@@ -43,3 +43,26 @@
       width: calc(100% - 40px);
     }
   }
+
+      /* Animation for menu item hover */
+      .menu-item:hover {
+        transform: scale(1.1);
+      }
+      
+      /* Animation for menu item entry */
+      .menu-item {
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      
+      /* Keyframes for the fadeIn animation */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
